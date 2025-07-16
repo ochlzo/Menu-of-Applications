@@ -1,0 +1,166 @@
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="date"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row div {
+    flex: 1;
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.form-container button.reset {
+    background-color: #f44336;
+}
+
+.form-container button.reset:hover {
+    background-color: #d32f2f;
+}
+
+.interests-grid {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 0.3fr 1.5fr 0.3fr 1fr;
+    gap: 5px;
+}
+
+.interests-grid input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+#submittedData {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #888888;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 900px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.data {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #submittedData {
+        width: 95%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    #submittedData {
+        width: 95%; 
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}
