@@ -2,13 +2,15 @@
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light">Exercises</div>
+            <div class="sidebar-heading border-bottom bg-light">
+          <a href="../index.html">Exercises</a>
+        </div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="exercise1.php">Exercise 1</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="exercise2.php">Exercise 2</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="exercise3.php">Exercise 3</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="exercise4.php">Exercise 4</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exercise 5</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="exercise5.php">Exercise 5</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exercise 6</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exercise 7</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exercise 8</a> 
